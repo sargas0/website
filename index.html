@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sargaso Ocean Tech — Know Before It Hits</title>
+  <meta name="description" content="Days-ahead satellite sargassum alerts and beach-specific dashboards for hotels, municipalities, and marinas in the Caribbean and Gulf of Mexico." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Keep that beach open." />
+  <meta property="og:description" content="Track blooms offshore and get days-ahead forecasts so your crew cleans once — before guests notice." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sargaso.ca/" />
+  <meta property="og:image" content="https://www.sargaso.ca/og-hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keep that beach open." />
+  <meta name="twitter:description" content="Days-ahead alerts, beach-specific dashboards, and cleanup planning." />
+  <meta name="twitter:image" content="https://www.sargaso.ca/og-hero.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://www.sargaso.ca/" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Sargaso Ocean Tech home">
+        <img src="logo.png" alt="" class="logo" />
+        <span class="brand-text">Sargaso Ocean Tech</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="#how">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="hero">
+      <img 
+          loading="eager" 
+          fetchpriority="high" 
+          src="sargassum.jpg" 
+          alt="Satellite view of sargassum" 
+          class="hero-bg" 
+      />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Keep that beach open.</h1>
+        <p class="subhead">We track offshore blooms so your crew cleans before guests notice.</p>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Detect</h3>
+            <p>We analyze satellite imagery to identify offshore sargassum and concentration trends near your coastline.</p>
+          </div>
+          <div class="card">
+            <h3>Forecast</h3>
+            <p>We estimate shoreline impact windows using winds and currents, highlighting uncertainty when it increases.</p>
+          </div>
+          <div class="card">
+            <h3>Alert</h3>
+            <p>We send actionable alerts with beach segments, expected volumes, and timing — in your team’s channels.</p>
+          </div>
+        </div>
+        <figure class="screenshot">
+          <img loading="lazy" src="/assets/dashboard.webp" alt="Sargassum monitoring dashboard showing offshore mats and shoreline impact windows" />
+          <figcaption>Beach-specific dashboard with offshore mats, drift paths, and arrival windows.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2>Features for operations teams</h2>
+        <div class="grid-4">
+          <div class="feature">
+            <h3>Days-ahead alerts</h3>
+            <p>Plan staffing and equipment before mats make landfall, and avoid costly double-cleans.</p>
+          </div>
+          <div class="feature">
+            <h3>Beach-specific dashboards</h3>
+            <p>Your shoreline segmented with thresholds you control and alert preferences you set.</p>
+          </div>
+          <div class="feature">
+            <h3>Multi-channel delivery</h3>
+            <p>Email, SMS, WhatsApp, and webhook integrations for smooth dispatch.</p>
+          </div>
+          <div class="feature">
+            <h3>Support and SLA</h3>
+            <p>Peak-season coverage with response targets that match your operating hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="section">
+      <div class="container">
+        <h2>Coverage and cadence</h2>
+        <div class="grid-2">
+          <div>
+            <p>We currently serve the Caribbean, Gulf of Mexico, and selected Atlantic coastlines. If your beach isn’t listed, we can evaluate coverage upon request.</p>
+            <ul class="checklist">
+              <li><strong>Regions:</strong> Caribbean, Gulf of Mexico, selected Atlantic</li>
+              <li><strong>Update cadence:</strong> Daily; more frequent where data allows</li>
+              <li><strong>Confidence:</strong> Clear thresholds and uncertainty flags</li>
+            </ul>
+          </div>
+          <figure class="map">
+            <img loading="lazy" src="/assets/coverage.webp" alt="Map highlighting current coverage regions" />
+          </figure>
+        </div>
+      </div>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>How much lead time do alerts provide?</summary>
+          <p>Lead time varies with distance, currents, and wind; in many cases you’ll receive days-ahead notice with updates as conditions change.</p>
+        </details>
+        <details>
+          <summary>What channels do you support?</summary>
+          <p>Email, SMS, WhatsApp, and webhook. We can discuss other integrations during onboarding.</p>
+        </details>
+        <details>
+          <summary>How long does onboarding take?</summary>
+          <p>Typical onboarding completes in about two weeks, including beach segmentation and alert thresholds.</p>
+        </details>
+        <details>
+          <summary>Do you support multiple beaches?</summary>
+          <p>Yes. We segment each shoreline and manage alerts per location and threshold.</p>
+        </details>
+      </div>
+    </section> 
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Book a demo</h2>
+        <p>Tell us about your beaches and seasonality. We’ll share a sample alert and a live dashboard.</p>
+        <div class="grid-2">
+          <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST" novalidate>
+            <input type="text" name="company" placeholder="Organization" autocomplete="organization" required />
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+            <input type="email" name="email" placeholder="Work email" autocomplete="email" required />
+            <!-- <input type="tel" name="phone" placeholder="Phone or WhatsApp (optional)" autocomplete="tel" /> -->
+            <textarea name="message" placeholder="What’s your sargassum challenge?" rows="4"></textarea>
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="btn btn-primary">Request demo</button>
+            <!-- <p class="form-note">By submitting, you agree to our <a href="/privacy">Privacy Policy</a>.</p> -->
+            <div class="form-status" aria-live="polite"></div>
+          </form>
+          <div class="contact-meta">
+            <a class="btn btn-ghost" href="https://calendly.com/YOUR_CALENDLY" target="_blank" rel="noopener">Schedule a call</a>
+            <p><strong>Email:</strong> info@sargaso.ca</p>
+            <div id="sample" class="sample">
+              <h3>Sample alert</h3>
+              <p>“North Beach segments 3–5: increased offshore concentration, arrival window Wed–Thu, moderate volume, confidence medium. Next update 10:00.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <strong>Sargaso Ocean Tech</strong><br />
+        Halifax, NS · Caribbean coverage
+      </div>
+      <nav class="footer-nav">
+        <a href="#features">Features</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+      <div>&copy; <span id="year"></span> Sargaso Ocean Tech</div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Sargaso Ocean Tech",
+    "url":"https://www.sargaso.ca",
+    "logo":"https://www.sargaso.ca/assets/logo.svg",
+    "contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"info@sargaso.ca"}
+  }
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>
