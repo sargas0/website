@@ -23,22 +23,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="canonical" href="https://www.sargaso.ca/" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="/" class="brand" aria-label="Sargaso Ocean Tech home">
-        <img src="logo.png" alt="" class="logo" />
-        <span class="brand-text">Sargaso Ocean Tech</span>
+      <a href="#" class="brand" aria-label="Sargaso Ocean Tech home">
+        <img src="sargass.png" alt="" class="logo"/>
+        <span class="brand-text" style="font-family:'Hubot Sans'">Sargaso Ocean Tech</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
       </button>
-      <nav id="site-nav" class="site-nav" role="navigation">
+      <nav id="site-nav" class="site-nav" role="navigation" style="font-family: 'Hubot Sans';">
         <ul>
           <li><a href="#how">About</a></li>
           <li><a href="#features">Features</a></li>
@@ -59,7 +68,9 @@
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <h1>Keep that beach open.</h1>
-        <p class="subhead">We track offshore blooms so your crew cleans before guests notice.</p>
+        <p class="subhead"> We identify and manage Sargassum before your patrons even notice. </p>
+        <!-- Wanted to remove the word "guest" here (for no reason you could change it but patrons seemed broader reach to me and removed "blooms" since they arent referred to as blooms in jamaica -->
+        <!-- <p class="subhead">We track offshore blooms so your crew cleans before guests notice.</p> -->
       </div>
     </section>
 
@@ -73,7 +84,7 @@
           </div>
           <div class="card">
             <h3>Forecast</h3>
-            <p>We estimate shoreline impact windows using winds and currents, highlighting uncertainty when it increases.</p>
+            <p>We estimate shoreline impact windows using wind and ocean current data, highlighting uncertainty when it increases.</p>
           </div>
           <div class="card">
             <h3>Alert</h3>
@@ -137,7 +148,7 @@
           <p>Lead time varies with distance, currents, and wind; in many cases you’ll receive days-ahead notice with updates as conditions change.</p>
         </details>
         <details>
-          <summary>What channels do you support?</summary>
+          <summary>What communication channels do you support?</summary>
           <p>Email, SMS, WhatsApp, and webhook. We can discuss other integrations during onboarding.</p>
         </details>
         <details>
@@ -158,8 +169,8 @@
         <div class="grid-2">
           <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST" novalidate>
             <input type="text" name="company" placeholder="Organization" autocomplete="organization" required />
-            <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
-            <input type="email" name="email" placeholder="Work email" autocomplete="email" required />
+            <input type="text" name="name" placeholder="Your Name" autocomplete="name" required />
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required />
             <!-- <input type="tel" name="phone" placeholder="Phone or WhatsApp (optional)" autocomplete="tel" /> -->
             <textarea name="message" placeholder="What’s your sargassum challenge?" rows="4"></textarea>
             <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -169,10 +180,10 @@
           </form>
           <div class="contact-meta">
             <a class="btn btn-ghost" href="https://calendly.com/YOUR_CALENDLY" target="_blank" rel="noopener">Schedule a call</a>
-            <p><strong>Email:</strong> info@sargaso.ca</p>
+            <p><strong>Email:</strong> <a href="mailto:info@sargaso.ca ">info@sargaso.ca</a></p>
             <div id="sample" class="sample">
               <h3>Sample alert</h3>
-              <p>“North Beach segments 3–5: increased offshore concentration, arrival window Wed–Thu, moderate volume, confidence medium. Next update 10:00.”</p>
+              <p><i>“North Beach segments 3–5: increased offshore concentration, arrival window Wed–Thu, moderate volume, confidence medium. Next update 10:00.”</i></p>
             </div>
           </div>
         </div>
@@ -182,15 +193,15 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <div>
-        <strong>Sargaso Ocean Tech</strong><br />
+      <div >
+        <strong style="font-family: 'Hubot Sans'">Sargaso Ocean Tech</strong><br />
         Halifax, NS · Caribbean coverage
       </div>
       <nav class="footer-nav">
         <a href="#features">Features</a>
         <a href="#coverage">Coverage</a>
         <a href="#faq">FAQ</a>
-        <a href="/privacy">Privacy</a>
+        <!-- <a href="/privacy">Privacy</a> -->
       </nav>
       <div>&copy; <span id="year"></span> Sargaso Ocean Tech</div>
     </div>
