@@ -159,12 +159,33 @@
     </section> 
 
     <section id="contact" class="section contact">
-  <div class="container">
-    <h2>Contact us</h2>
-    <p>We’d love to help solve your sargassum troubles. Reach out today and let’s get started.</p>
-    <p><strong>Email:</strong> <a href="mailto:info@sargaso.ca">info@sargaso.ca</a></p>
-  </div>
-</section>
+
+      <div class="container">
+        <h2>Book a demo</h2>
+        <p>Tell us about your beaches and seasonality. We’ll share a sample alert and a live dashboard.</p>
+        <div class="grid-2">
+          <form class="contact-form" action="https://formspree.io/f/xqadknol" method="POST" novalidate>
+            <input type="text" name="company" placeholder="Organization" autocomplete="organization" required />
+            <input type="text" name="name" placeholder="Your Name" autocomplete="name" required />
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required />
+            <!-- <input type="tel" name="phone" placeholder="Phone or WhatsApp (optional)" autocomplete="tel" /> -->
+            <textarea name="message" placeholder="What’s your sargassum challenge?" rows="4"></textarea>
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="btn btn-primary">Request demo</button>
+            <!-- <p class="form-note">By submitting, you agree to our <a href="/privacy">Privacy Policy</a>.</p> -->
+            <div class="form-status" aria-live="polite"></div>
+          </form>
+          <div class="contact-meta">
+            <a class="btn btn-ghost" href="https://calendly.com/YOUR_CALENDLY" target="_blank" rel="noopener">Schedule a call</a>
+            <p><strong>Email:</strong> <a href="mailto:info@sargaso.ca ">info@sargaso.ca</a></p>
+            <div id="sample" class="sample">
+              <h3>Sample alert</h3>
+              <p><i>“North Beach segments 3–5: increased offshore concentration, arrival window Wed–Thu, moderate volume, confidence medium. Next update 10:00.”</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
