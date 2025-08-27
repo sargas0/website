@@ -358,11 +358,11 @@ a:active {
 }
 
 .contact-form .btn.btn-primary:active {
-  background: linear-gradient(135deg, #1e40af, #2563eb);
-  box-shadow: 0 0 8px rgba(30, 64, 175, 0.5);
-  transfo
+  background: linear-gradient(135deg, #2563eb, #3b82f6); /* deeper gradient when pressed */
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.55);
+  transform: translateY(0);
+}
 
-/* Honeypot (spam trap) */
 .honeypot {
   display: none !important;
 }
@@ -381,4 +381,13 @@ a:active {
     padding: 1rem;
     border-radius: 10px;
   }
+}
+
+.phone {
+  position: absolute !important;
+  left: -9999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
 }

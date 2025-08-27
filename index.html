@@ -162,6 +162,11 @@
     </div>
 
     <form class="contact-form contact-card" action="https://formspree.io/f/xqadknol" method="POST" novalidate>
+      <div class="field phone">
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" name="phone" autocomplete="tel" />
+      </div>
+
       <div class="field">
         <label for="company">Organization</label>
         <input id="company" type="text" name="company" autocomplete="organization" required />
@@ -182,10 +187,7 @@
         <textarea id="message" name="message" rows="4"></textarea>
       </div>
 
-      <!-- precaution -->
-      <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-      <button type="submit" class="btn btn-primary">Request a walkthrough</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
       <div class="form-status" aria-live="polite"></div>
     </form>
   </div>

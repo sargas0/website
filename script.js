@@ -39,3 +39,23 @@ if (form) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('form.contact-form');
+  if (!form) return;
+
+  // select the hidden phone trap field
+  const hiddenPhone = form.querySelector('.phone input[name="phone"]');
+  const statusEl = form.querySelector('.form-status');
+
+  form.addEventListener('submit', function (e) {
+    if (hiddenPhone && hiddenPhone.value.trim() !== '') {
+      e.preventDefault();
+      e.stopPropagation();
+
+      form.reset();
+      console.warn("Unhuman submission blocked.");
+      return false;
+    }
+  });
+});
